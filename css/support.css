@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('img/16.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.input-box input, .input-box textarea {
+    width: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 15px;
+    outline: none;
+}
+
+.input-box textarea {
+    resize: none;
+    min-height: 350px;
+    max-height: 350px;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 32px; /* Добавлено для увеличения отступа снизу */
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.telegram-link {
+    display: inline-flex;
+    align-items: center;
+    background: #229ED9;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(34,158,217,0.12);
+}
+.telegram-link:hover {
+    background: #176cae;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tg-modern-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(90deg, #229ED9 0%, #38b2e6 100%);
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 24px;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(34,158,217,0.15);
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.tg-modern-btn .tg-icon {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.tg-modern-btn:hover {
+    background: linear-gradient(90deg, #176cae 0%, #229ED9 100%);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(34,158,217,0.22);
+}
+
+.tg-modern-btn:active {
+    transform: scale(0.98);
+}
+
+.tg-modern-btn .tg-text {
+    letter-spacing: 0.5px;
+    font-size: 1.08em;
+    font-weight: 600;
+}

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('img/15.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 900px;
+    max-width: 98vw;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+}
+
+.profile-box {
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 24px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile-box h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.user-info .info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 1.08em;
+}
+
+.user-info .info-row i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.balance-info .balance {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.balance-info .btn {
+    width: 100%;
+    padding: 10px 0;
+    background: #DC7000;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 48px; /* чтобы кнопка была ниже баланса */
+    transition: background 0.2s, color 0.2s;
+}
+
+.balance-info .btn:hover {
+    background: #b95c00;
+    color: #fff;
+}
+
+.user-info .btn {
+    width: 100%;
+    padding: 10px 0;
+    background: #DC7000;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0px; /* чтобы кнопка была ниже баланса */
+    transition: background 0.2s, color 0.2s;
+}
+
+.user-info .btn:hover {
+    background: #b95c00;
+    color: #fff;
+}
+
+.card-info {
+    align-items: center;
+}
+
+.bank-card {
+    width: 90%;
+    max-width: 260px;
+    border-radius: 16px;
+    box-shadow: none;
+    margin-top: 10px;
+}
+
+.transactions-info {
+    width: 100%;
+}
+
+.transactions-list {
+    list-style: none;
+    width: 100%;
+}
+
+.transactions-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-size: 1em;
+}
+
+.transactions-list li:last-child {
+    border-bottom: none;
+}
+
+.tr-date {
+    width: 90px;
+    color: #b3e0f7;
+    font-size: 0.98em;
+}
+
+.tr-desc {
+    flex: 1;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.tr-sum {
+    min-width: 80px;
+    text-align: right;
+    font-weight: 600;
+}
+
+.tr-sum.plus {
+    color: #4be04b;
+}
+
+.tr-sum.minus {
+    color: #ff6b6b;
+}
+
+.register-link {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.btn, a.btn {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background: #DC7000;
+    color: #fff !important;
+    border: none;
+    border-radius: 40px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none !important; /* убирает подчеркивание */
+    margin-top: 18px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover, a.btn:hover {
+    background: #b95c00;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+

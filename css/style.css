@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    background: linear-gradient(180deg,rgb(0, 0, 0) 38%, rgba(51, 3, 0, 1) 100%);    
+    width: 100%;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+header nav ul li:hover a {
+    color: #DC7000;
+  }
+
+header nav ul li.active a {
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+
+header nav ul li:not(.active):not(.btn) a {
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+header nav ul li.btn a {
+    background: #DC7000;
+    padding: 9px 17px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    color: #000000;
+}
+
+header nav ul li.btn a:hover {
+    background: #330300;
+    color: #DC7000;
+}
+
+header nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(26, 26, 26, 0.9); /* Размытие */
+    border-radius: 12px;
+    padding: 12px 0;
+    min-width: 200px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+}
+
+ .language-switcher {
+    background: #DC7000;
+    border-radius: 8px;
+    padding: 5px 12px;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.language-switcher .lang-option {
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.language-switcher .lang-option:hover {
+    background-color: #330300;
+    color: #DC7000;
+}
+
+.language-switcher .lang-option.active {
+    background-color: #330300;
+    color: #DC7000;
+}
+  
+
+header nav ul li:hover .dropdown {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+  
+header nav ul li .dropdown li {
+    display: block;
+}
+  
+header nav ul li .dropdown li a {
+    display: block;
+    padding: 12px 22px;
+    font-weight: 500;
+    color: #fff;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 8px;
+    text-align: left;
+    max-width: none;
+}
+
+
+  
+header nav ul li .dropdown li a:hover {
+    background: #DC7000;
+    color: #000;
+}
+
+
+
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero--info {
+    width: 530px;
+    padding-top: 70px;
+}
+
+.hero--info h2 {
+    color: #DC7000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero--info h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero--info p {
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px 0;
+}
+
+
+.hero--info .btn {
+    background: #DC7000;
+    color: #000000;
+    border-radius: 30px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+
+
+.hero--info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: #330300;
+    color: #DC7000;
+    
+}
+
+.hero img {
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+
+.trending {
+    padding-top: 50px;
+}
+
+.trending h3 {
+    font-weight: 600;
+    font-size: 31px;
+}
+
+.trending .see-all {
+    color: #fff;
+    background: #25211D;
+    border-radius: 5px;
+    padding: 12px 23px;
+    float: right;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.trending .see-all:hover {
+    transform: scale(1.1);
+}
+
+.trending .cards {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 30px; 
+    width: 100%;
+    padding: 50px 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* две колонки */
+    gap: 20px; /* расстояние между карточками */
+    justify-items: center; /* выравнивание по центру */
+    margin-top: 40px;
+}
+
+  .cards img {
+    width: 500px;  /* или другой нужный размер */
+    height: auto;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.6s ease;
+}
+
+.big-text {
+    padding: 50px 0;
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    width: 800px;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2); /* Полупрозрачный эффект */
+    backdrop-filter: blur(10px);
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.floating-button:hover {
+    background: rgba(255, 255, 255, 0.4); /* Чуть светлее при наведении */
+    transform: scale(1.1); /* Увеличение */
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.5); /* Эффект свечения */
+}
+
+.footer {
+    background: rgba(51, 3, 0, 1); /* Чистый цвет */
+    padding: 20px;
+    text-align: center;
+
+}
+
+.footer-content p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff; /* Чёрный текст */
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+
+.footer-links a {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #DC7000;
+}
+
+.footer-content p {
+    font-size: 16px; /* Чуть крупнее, для лучшей читаемости */
+    font-weight: 500; /* Делаем текст чуть выразительнее */
+    letter-spacing: 0.5px; /* Добавляем небольшое расстояние между буквами */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Лёгкий эффект тени */
+}
+
+#logoutButton {
+    background: #DC7000;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#logoutButton:hover {
+    background: #330300;
+    transform: scale(1.1);
+}
+
+.parallax-img {
+    width: 650px;      /* увеличенный размер */
+    max-width: 90vw;   /* адаптивность */
+    height: auto;
+    transition: transform 0.3s cubic-bezier(.25,.46,.45,.94);
+    will-change: transform;
+}
+
+/* Только для первого уровня меню */
+header nav > ul > li > a {
+    max-width: 110px;
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+    display: inline-block;
+    line-height: 1.2;
+}
+
+/* Для выпадающих ссылок — выравнивание влево */
+header nav ul li .dropdown li a {
+    text-align: left;
+    max-width: none;
+    display: block;
+}
+
+
