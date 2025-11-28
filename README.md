@@ -10,15 +10,12 @@ The website allows users to create accounts, log in, check their balance, make t
 - Check account balance  
 - Transfer money between users  
 - View a detailed history of transactions  
-- Responsive layout that works on desktop and mobile  
+- Responsive layout 
 
 ## Technologies Used
-- **Frontend:** HTML, CSS, JavaScript (or React/Vue if applicable)  
-- **Backend:** Node.js and Express (or Django/Flask if using Python)  
-- **Database:** PostgreSQL / MongoDB (your choice)  
-- **Authentication:** JWT or session-based authentication  
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** PHP
+- **Database:** MySQL (via XAMPP)  
+- **Authentication:** PHP sessions for login management  
 
-## Installation
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/username/banking-website.git
+
