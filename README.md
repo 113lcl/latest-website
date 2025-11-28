@@ -1,4 +1,4 @@
-# Banking Website
+# ZXC Bank
 
 ## About
 This is a small personal project I made to practice web development. It's a simple banking website where you can create an account, log in, check your balance, send money to other users, and see your transaction history.  
