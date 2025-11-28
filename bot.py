@@ -3,15 +3,15 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import os
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Бот работает! Добро пожаловать.")
+    await update.message.reply_text("Bot is working! Welcome.")
 
 if __name__ == '__main__':
-    # Получаем токен из переменной окружения BOT_TOKEN
+    
     token = os.getenv("BOT_TOKEN")
     if not token:
-        print("Ошибка: переменная окружения BOT_TOKEN не установлена.")
+        print("Error: Environment variable BOT_TOKEN is not set.")
     else:
         app = ApplicationBuilder().token(token).build()
         app.add_handler(CommandHandler("start", start))
-        print("Бот запущен. Ожидание сообщений...")
+        print("The bot has been launched. Waiting for messages...")
         app.run_polling()
